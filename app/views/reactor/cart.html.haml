@@ -1,0 +1,70 @@
+
+.navigation
+  %nav.navbar.navbar-inverse
+    .container-fluid
+      .navbar-header
+        %a.navbar-brand{:href => "#"} Flipkart
+      %ul.nav.navbar-nav
+        %li
+          %a{:href => "#"} Home
+        %li
+          %a{:href => "#"} Page 1
+        %li
+          %a{:href => "#"} Page 2
+        %li
+          %a{:href => "#"} Page 3
+      %ul.nav.navbar-nav.navbar-right
+       
+        %li.dropdown
+          %a.dropdown-toggle{"data-toggle" => "dropdown", :href => "#"}
+            About Us
+            %b.caret
+          %ul.dropdown-menu
+            %li
+            %a{:href => "#"} Action
+            %li
+            %a{:href => "#"} Another action
+            %li
+            %a{:href => "#"} Something else here
+            %li.divider
+            %li.nav-header Nav header
+            %li
+            %a{:href => "#"} Separated link
+            %li
+            %a{:href => "#"} One more separated link
+        %li        
+          %button.btn.btn-info.btn-lg{:type => "button"}
+            %span.glyphicon.glyphicon-shopping-cart>
+              MyCart
+            %span.badge 3
+            
+
+.row.content.text-center
+  .col-md-3
+    %h1
+      Deal of the day
+  .col-md-3
+    %img{:src => "https://rukminim1.flixcart.com/image/400/400/backpack/t/j/z/7339101-puma-pumapioneerbackpacki-original-imaehsyth6cvgwrr.jpeg?q=70",:height => "300", :width => "200"}
+      %h4
+        Bags
+      %h3
+        Min. 30% off
+      %button.btn.btn-primary{:type => "button"} Add to cart
+  .col-md-3
+    %img{:src => "https://rukminim1.flixcart.com/image/400/400/watch/y/t/q/ch2927-fossil-original-imae9g6q4vyckrz3.jpeg?q=70",:height => "300", :width => "200"}
+      %h4
+        Watches
+      %h3
+        Min. 70% off
+      %button.btn.btn-primary{:type => "button"} Add to cart
+  .col-md-3
+    %img{:src => "https://rukminim1.flixcart.com/image/400/400/perfume/y/f/y/eau-de-toilette-davidoff-125-cool-water-original-imaegdmuvwtrdc78.jpeg?q=70",:height => "300", :width => "200"}
+      %h4
+        perfumes
+      %h3
+        Min. 50% off
+      %button.btn.btn-primary{:type => "button"} Add to cart  
+
+
+#root1    
+= react_component('Carts')
